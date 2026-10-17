@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.example.memory-review</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>__ABSOLUTE_PYTHON__</string>
+    <string>-B</string>
+    <string>__ABSOLUTE_REPOSITORY__/automation/memory_review.py</string>
+    <string>--config</string>
+    <string>__ABSOLUTE_LOCAL_CONFIG__</string>
+    <string>tick</string>
+  </array>
+  <key>WorkingDirectory</key><string>__ABSOLUTE_WORKSPACE__</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key><string>__ABSOLUTE_HOME__</string>
+    <key>XDG_CONFIG_HOME</key><string>__ABSOLUTE_XDG_CONFIG_HOME__</string>
+  </dict>
+  <key>StartInterval</key><integer>900</integer>
+  <key>RunAtLoad</key><false/>
+  <key>ProcessType</key><string>Background</string>
+  <key>StandardOutPath</key><string>/dev/null</string>
+  <key>StandardErrorPath</key><string>/dev/null</string>
+</dict>
+</plist>

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "pi_d_root": "/absolute/path/to/pi-d",
+  "auth_module_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "model": {
+    "provider": "openai-codex",
+    "modelId": "MODEL_ID_FROM_YOUR_CATALOG"
+  },
+  "history_python": "/absolute/path/to/python3",
+  "allow_auth_refresh": false
+}

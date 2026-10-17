@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "interval_seconds": 900,
+  "enabled": false,
+  "history_helper": "/absolute/path/to/pi-d-memory/helpers/read_conversation.py",
+  "policy_file": "/absolute/path/to/pi-d-memory/automation/MEMORY-POLICY.md",
+  "worker_command": [
+    "/absolute/path/to/node",
+    "/absolute/path/to/pi-d-memory/automation/run_review.mjs",
+    "--runtime",
+    "/absolute/path/to/local/runtime.json"
+  ],
+  "agents": [
+    {
+      "id": "planning",
+      "enabled": false,
+      "workspace": "/absolute/path/to/workspace",
+      "owned_paths": ["memory"],
+      "indexes": ["memory/index.md"],
+      "state_files": [],
+      "require_metadata": true
+    }
+  ]
+}

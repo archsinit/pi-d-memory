@@ -1,0 +1,19 @@
+{
+  "name": "pi-d-memory",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scheduled, owner-scoped memory maintenance using the stock Durable agent engine used by pi-d.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/archsinit/pi-d-memory.git"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "make test",
+    "test:reviewer": "node --test automation/tests/run_review.test.mjs"
+  }
+}

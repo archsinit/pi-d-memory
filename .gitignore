@@ -1,0 +1,31 @@
+# Deployment data belongs outside this repository.
+memory/
+state/
+backups/
+.memory-review-runtime/
+*.sqlite*
+*.db
+*.db-*
+*.log
+*.result.json
+*.registration.lock
+*.bak
+.env
+.env.*
+auth.json
+auth.json.*
+
+# Only sanitized examples / package metadata are versioned JSON or launchd files.
+*.json
+!package.json
+!examples/*.example.json
+*.plist
+!examples/*.example.plist
+
+# Local dependency installations, caches and operating-system files.
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+coverage/
+.DS_Store
